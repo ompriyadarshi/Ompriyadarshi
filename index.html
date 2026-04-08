@@ -17,19 +17,27 @@
         }
 
         /* काला हेडर */
-        header {
-            background-color: #000; color: #fff;
-            padding: 15px 20px; display: flex;
-            justify-content: space-between; align-items: center;
-            position: sticky; top: 0; z-index: 1000;
-        }
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        header h1 { margin: 0; font-size: 18px; text-align: left; }
-        
-        nav a {
-            color: #fff; text-decoration: none;
-            margin: 0 8px; font-size: 13px;
-        }
+nav {
+    text-align: right;
+    line-height: 1.8; /* लाइनों के बीच जगह के लिए */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
 
         /* प्रोफाइल फोटो */
         .profile-pic {
@@ -92,13 +100,25 @@ marquee {
 </div>
 
     <header>
-        <h1>Om Priyadarshi<br><span style="font-size: 12px; color: #f9a826;">PRC Sitamarhi</span></h1>
-        <nav>
+<header>
+    <div class="logo-area">
+        <h1 style="margin:0; font-size: 20px;">Om Priyadarshi</h1>
+        <span style="font-size: 12px; color: #f9a826;">PRC Sitamarhi</span>
+    </div>
+    <nav>
+        <div class="nav-top">
             <a href="#">Home</a>
             <a href="#about">About</a>
             <a href="#courses">Courses</a>
+        </div>
+        <div class="nav-bottom">
             <a href="#contact">Contact</a>
-        </nav>
+            <a href="#registration" style="color: #ff0000; font-weight: bold; margin-left: 10px;">Registration Now</a>
+        </div>
+    </nav>
+</header>
+
+
     </header>
 
     <div class="hero-section">
@@ -128,6 +148,50 @@ marquee {
 
         </div>
     </div>
+<div id="registration" class="section" style="background: #fff; border-top: 5px solid #ff9f00;">
+    <h2>Student Registration Form</h2>
+    <p>Admission ke liye apni jankari bharein:</p>
+    
+    <form action="mailto:omsharankumar2004@gmail.com" method="post" enctype="text/plain" style="max-width: 450px; margin: 0 auto; text-align: left; padding: 20px; background: #f9f9f9; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+        
+        <label><b>Student Name:</b></label><br>
+        <input type="text" name="StudentName" placeholder="Apna naam likhein" required style="width: 100%; padding: 12px; margin: 8px 0 15px 0; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+
+        <label><b>Father's Name:</b></label><br>
+        <input type="text" name="FatherName" placeholder="Pita ka naam likhein" required style="width: 100%; padding: 12px; margin: 8px 0 15px 0; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+
+        <label><b>Date of Birth:</b></label><br>
+        <input type="date" name="DOB" required style="width: 100%; padding: 12px; margin: 8px 0 15px 0; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; background: white;">
+
+        <label><b>Select Class:</b></label><br>
+        <select name="Class" required style="width: 100%; padding: 12px; margin: 8px 0 15px 0; border: 1px solid #ccc; border-radius: 5px; background: white;">
+            <option value="" disabled selected>Apni class chunein</option>
+            <option value="Play Group">Play Group</option>
+            <option value="LKG/UKG">LKG / UKG</option>
+            <option value="Class 1st">Class 1st</option>
+            <option value="Class 2nd">Class 2nd</option>
+            <option value="Class 3rd">Class 3rd</option>
+            <option value="Class 4th">Class 4th</option>
+            <option value="Class 5th">Class 5th</option>
+            <option value="Class 6th">Class 6th</option>
+            <option value="Class 7th">Class 7th</option>
+            <option value="Class 8th">Class 8th</option>
+            <option value="Class 9th">Class 9th</option>
+            <option value="Class 10th">Class 10th</option>
+            <option value="Class 11th (Arts)">Class 11th (Arts)</option>
+            <option value="Class 12th (Arts)">Class 12th (Arts)</option>
+            <option value="Competition">Competition (GK/GS/Exam Prep)</option>
+        </select>
+
+        <label><b>Mobile Number:</b></label><br>
+        <input type="tel" name="Mobile" placeholder="Mobile number likhein" required style="width: 100%; padding: 12px; margin: 8px 0 15px 0; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+
+        <label><b>Address:</b></label><br>
+        <textarea name="Address" rows="3" placeholder="Apna pura pata likhein" style="width: 100%; padding: 12px; margin: 8px 0 15px 0; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;"></textarea>
+
+        <input type="submit" value="Submit Registration" class="btn btn-join" style="width: 100%; cursor: pointer; border: none; font-size: 16px; font-weight: bold; background-color: #ff9f00; color: white; padding: 15px; border-radius: 5px;">
+    </form>
+</div>
 
     <div id="contact" class="section">
         <h2>Contact Us</h2>
