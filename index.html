@@ -1,178 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="hi">
 <head>
-  <title>Om Priyadarshi - PRC</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>PRC - Parigyaan Research Centre | Om Priyadarshi Sitamarhi</title>
+    <meta name="description" content="Om Priyadarshi द्वारा संचालित PRC में कक्षा 6वीं से 12वीं (Arts & All Subjects) की बेहतरीन तैयारी। Join for BSEB, CBSE and Competitive exams in Sitamarhi.">
+    <meta name="keywords" content="PRC Sitamarhi, Om Priyadarshi, Parigyaan Research Centre, Best Coaching in Sitamarhi, Arts Coaching Bihar Board">
+    <meta name="author" content="Om Priyadarshi">
 
-  <meta name="description" content="Best coaching for class 6 to 12 and competition exams">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0; padding: 0; text-align: center;
+            background-color: #f4f7f6; color: #333;
+        }
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial;
-    }
+        /* काला हेडर */
+        header {
+            background-color: #000; color: #fff;
+            padding: 15px 20px; display: flex;
+            justify-content: space-between; align-items: center;
+            position: sticky; top: 0; z-index: 1000;
+        }
 
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: black;
-      padding: 12px 20px;
-      position: sticky;
-      top: 0;
-    }
+        header h1 { margin: 0; font-size: 18px; text-align: left; }
+        
+        nav a {
+            color: #fff; text-decoration: none;
+            margin: 0 8px; font-size: 13px;
+        }
 
-    .logo {
-      color: white;
-      font-size: 20px;
-      font-weight: bold;
-    }
+        /* प्रोफाइल फोटो */
+        .profile-pic {
+            width: 140px; height: 140px;
+            border-radius: 50%; border: 4px solid #f9a826;
+            margin-top: 30px; object-fit: cover;
+        }
 
-    .menu a {
-      color: white;
-      margin-left: 15px;
-      text-decoration: none;
-    }
+        .hero-section { padding: 20px; background: white; }
+        .hero-text { font-size: 26px; font-weight: bold; margin: 10px 0; }
+        .admission-tag { color: #ff4500; font-weight: bold; font-size: 18px; }
 
-    .menu a:hover {
-      color: orange;
-    }
+        /* बटन स्टाइल */
+        .btn {
+            display: inline-block; padding: 12px 30px;
+            margin: 10px; border-radius: 25px;
+            text-decoration: none; font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn-join { background-color: #ff9f00; color: white; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        .btn-whatsapp { background-color: #25D366; color: white; margin-top: 20px; }
 
-    .hero {
-      text-align: center;
-      padding: 60px 20px;
-      background: linear-gradient(to right, #e3f2fd, #ffffff);
-    }
+        /* सेक्शन स्टाइल */
+        .section { padding: 40px 20px; background: #fff; margin-top: 10px; }
+        .courses-grid { display: flex; flex-direction: column; gap: 10px; max-width: 400px; margin: 0 auto; }
+        .course-card {
+            padding: 15px; background: #f9f9f9;
+            border: 1px solid #ddd; border-radius: 8px;
+            font-weight: 500;
+        }
 
-    .profile {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      margin: auto;
-      border: 4px solid orange;
-      display: block;
-    }
-
-    .btn {
-      padding: 12px 25px;
-      background: linear-gradient(to right, orange, red);
-      color: white;
-      border: none;
-      margin-top: 20px;
-      border-radius: 25px;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      transform: scale(1.1);
-    }
-
-    .about, .courses, .notes, .contact, .video {
-      text-align: center;
-      padding: 50px 20px;
-    }
-
-    .courses p {
-      background: white;
-      margin: 10px;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #ccc;
-    }
-
-    .whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: green;
-      color: white;
-      padding: 10px 15px;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
+        /* फुटर (Footer) */
+        footer {
+            background: #222; color: #bbb;
+            padding: 30px 20px; margin-top: 20px; font-size: 14px;
+        }
+        footer b { color: #fff; }
+    </style>
 </head>
-
 <body>
 
-<!-- Navbar -->
-<div class="navbar">
-  <div class="logo">Om Priyadarshi</div>
-  <div class="menu">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#courses">Courses</a>
-    <a href="#notes">Notes</a>
-    <a href="#contact">Contact</a>
-  </div>
-</div>
+    <header>
+        <h1>Om Priyadarshi<br><span style="font-size: 12px; color: #f9a826;">PRC Sitamarhi</span></h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#courses">Courses</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-<!-- Hero -->
-<div id="home" class="hero">
-  <img src="myphoto.jpg" class="profile">
+    <div class="hero-section">
+        <img src="myphoto.jpg" alt="Om Priyadarshi" class="profile-pic">
+        <p class="hero-text"> Om Priyadarshi</p>
+        <p>The Founder & Director of PRC</p>
+        <p class="admission-tag">🔥 Admission Open 2026</p>
+        
+        <a href="tel:+919508149674" class="btn btn-join">📞 Call: 9508149674</a>
+    </div>
 
-  <h1>Welcome to Om Priyadarshi</h1>
-  <p><b>The Founder & Director Of PRC</b></p>
-  <p>Parigyaan Research Centre</p>
-  <p style="color:red;">🔥 Admission Open 2026</p>
+    <div id="about" class="section">
+        <h2>About Us</h2>
+        <p>Parigyaan Research Centre (PRC) सीतामढ़ी का एक प्रमुख शिक्षा संस्थान है। यहाँ कक्षा 6वीं से 12वीं तक के छात्रों को अनुभवी शिक्षकों द्वारा गुणवत्तापूर्ण शिक्षा प्रदान की जाती है।</p>
+    </div>
 
-  <button class="btn" onclick="joinNow()">Join Now</button>
-  <p>📞 Call: 919508149674</p>
-</div>
+    <div id="courses" class="section" style="background: #f0f4f7;">
+        <h2>Our Courses</h2>
+        <div class="courses-grid">
+            <div class="course-card">📚 Class 6th to 12th (All Subjects)</div>
+            <div class="course-card">📘 Bihar Board (BSEB) Prep</div>
+            <div class="course-card">📗 CBSE Board Preparation</div>
+            <div class="course-card">🎯 Competitive Exams Prep</div>
+        </div>
+    </div>
 
-<!-- About -->
-<div id="about" class="about">
-  <h2>About Us</h2>
-  <p>
-    Om Priyadarshi is the Founder & Director of Parigyaan Research Centre (PRC).
-    This platform provides quality education for Class 6th to 12th and competition exams.
-  </p>
-</div>
+    <div id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>📍 Location: सीतामढ़ी, बिहार (Sitamarhi, Bihar)</p>
+        <p>📧 Email: omsharankumar2004@gmail.com</p>
+        
+        <a href="https://wa.me/919508149674?text=Hello%20Sir,%20I%20want%20to%20join%20PRC" class="btn btn-whatsapp">
+            Chat on WhatsApp
+        </a>
+    </div>
 
-<!-- Courses -->
-<div id="courses" class="courses">
-  <h2>Courses</h2>
-  <p>📚 Class 6th to 12th (All Subjects)</p>
-  <p>📘 BSEB Board Preparation</p>
-  <p>📗 CBSE Board Preparation</p>
-  <p>🎯 Competition Exams Preparation</p>
-</div>
-
-<!-- Notes -->
-<div id="notes" class="notes">
-  <h2>Free Notes</h2>
-  <p><a href="#">📥 Class 6 Notes</a></p>
-  <p><a href="#">📥 Class 10 Notes</a></p>
-  <p><a href="#">📥 GK / GS Notes</a></p>
-</div>
-
-<!-- Contact -->
-<div id="contact" class="contact">
-  <h2>Contact Us</h2>
-  <p>📞 Phone: 919508149674</p>
-  <p>📍 Location: Bihar</p>
-  <a href="tel:+91 9508149674">📲 Call Now</a>
-</div>
-
-<!-- Footer -->
-<div style="background:black; color:white; text-align:center; padding:10px;">
-  © 2026 Om Priyadarshi | PRC
-</div>
-
-<!-- WhatsApp -->
-<a href="https://wa.me/919508149674?text=Sir mujhe admission lena hai" class="whatsapp">
-Chat on WhatsApp
-</a>
-
-<!-- Script -->
-<script>
-function joinNow() {
-  window.open("https://forms.gle/XXXXX");
-}
-</script>
+    <footer>
+        <p><b>Parigyaan Research Centre (PRC)</b></p>
+        <p>Established Since 2020 | Director: Om Priyadarshi</p>
+        <p>© 2026 All Rights Reserved | Sitamarhi, Bihar</p>
+    </footer>
 
 </body>
 </html>
