@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRC | Study Material Portal</title>
+    <style>
+        :root {
+            --primary: #0f172a; 
+            --accent: #f9a826;  
+            --bg: #f8fafc;
+            --white: #ffffff;
+            --text: #334155;
+            --shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        body { 
+            font-family: 'Segoe UI', Roboto, sans-serif; 
+            background-color: var(--bg); 
+            margin: 0; padding: 0; 
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header { 
+            background: linear-gradient(135deg, var(--primary) 0%, #1e293b 100%); 
+            color: var(--accent); 
+            padding: 60px 20px; 
+            text-align: center; 
+            border-bottom: 6px solid var(--accent);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        header h1 { margin: 0; font-size: 36px; text-transform: uppercase; letter-spacing: 2px; }
+        header p { color: white; margin-top: 10px; font-size: 18px; font-weight: 300; }
+
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        
+        .back-nav { margin-bottom: 30px; }
+        .back-nav a { 
+            text-decoration: none; 
+            color: var(--primary); 
+            font-weight: bold; 
+            background: var(--white);
+            padding: 10px 20px; 
+            border-radius: 30px; 
+            border: 2px solid var(--primary);
+            transition: 0.3s ease;
+        }
+        .back-nav a:hover { background: var(--primary); color: white; }
+
+        .class-card { 
+            background: var(--white); 
+            border-radius: 20px; 
+            padding: 35px; 
+            margin-bottom: 40px; 
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .class-card::before {
+            content: "";
+            position: absolute;
+            left: 0; top: 0; bottom: 0;
+            width: 8px;
+            background: var(--accent);
+        }
+
+        .class-badge { 
+            background: var(--primary);
+            color: var(--accent);
+            padding: 4px 15px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 12px;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        
+        .class-title { 
+            font-size: 24px; 
+            color: var(--primary); 
+            margin: 0 0 25px 0;
+            font-weight: 800;
+        }
+
+        .subject-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); 
+            gap: 20px; 
+        }
+        
+        .subject-item { 
+            background: #f1f5f9; 
+            padding: 18px; 
+            border-radius: 12px; 
+            text-align: center; 
+            text-decoration: none; 
+            color: var(--primary); 
+            font-weight: 700; 
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid transparent;
+        }
+        
+        .subject-item:hover { 
+            background: var(--white); 
+            border-color: var(--accent);
+            color: #ea580c;
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(249, 168, 38, 0.2);
+        }
+
+        .subject-item span { 
+            display: block; 
+            font-size: 11px; 
+            color: #64748b; 
+            margin-top: 5px; 
+            font-weight: normal; 
+        }
+
+        footer { 
+            background: var(--primary); 
+            color: white; 
+            padding: 50px 20px; 
+            text-align: center; 
+            margin-top: 80px;
+        }
+        .footer-logo { color: var(--accent); font-size: 24px; font-weight: bold; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>PRC Study Portal</h1>
+    <p>Success starts with the right Material</p>
+</header>
+
+<div class="container">
+    <div class="back-nav">
+        <a href="index.html">← होम पेज पर वापस जाएँ</a>
+    </div>
+
+    <div class="class-card">
+        <div class="class-badge">SENIOR SECONDARY</div>
+        <h2 class="class-title">Class 12th (Arts Stream)</h2>
+        <div class="subject-grid">
+            <a href="class12-history.html" class="subject-item">History <span>(इतिहास)</span></a>
+            <a href="class12-polscience.html" class="subject-item">Pol. Science <span>(राजनीति विज्ञान)</span></a>
+            <a href="class12-geography.html" class="subject-item">Geography <span>(भूगोल)</span></a>
+            <a href="class12-hindi.html" class="subject-item">Hindi <span>(हिंदी)</span></a>
+            <a href="class12-english.html" class="subject-item">English <span>(अंग्रेजी)</span></a>
+        </div>
+    </div>
+
+    <div class="class-card">
+        <div class="class-badge">SENIOR SECONDARY</div>
+        <h2 class="class-title">Class 11th (Arts Stream)</h2>
+        <div class="subject-grid">
+            <a href="class11-history.html" class="subject-item">History <span>(इतिहास)</span></a>
+            <a href="class11-polscience.html" class="subject-item">Pol. Science <span>(राजनीति विज्ञान)</span></a>
+            <a href="class11-geography.html" class="subject-item">Geography <span>(भूगोल)</span></a>
+            <a href="class11-hindi.html" class="subject-item">Hindi <span>(हिंदी)</span></a>
+            <a href="class11-english.html" class="subject-item">English <span>(अंग्रेजी)</span></a>
+        </div>
+    </div>
+
+    <div class="class-card">
+        <div class="class-badge">MATRIC BOARD</div>
+        <h2 class="class-title">Class 10th</h2>
+        <div class="subject-grid">
+            <a href="class10-math.html" class="subject-item">Mathematics <span>(गणित)</span></a>
+            <a href="class10-science.html" class="subject-item">Science <span>(विज्ञान)</span></a>
+            <a href="class10-sst.html" class="subject-item">Social Science <span>(सामाजिक विज्ञान)</span></a>
+            <a href="class10-hindi.html" class="subject-item">Hindi <span>(हिंदी)</span></a>
+            <a href="class10-english.html" class="subject-item">English <span>(अंग्रेजी)</span></a>
+            <a href="class10-sanskrit.html" class="subject-item">Sanskrit <span>(संस्कृत)</span></a>
+        </div>
+    </div>
+
+    <div class="class-card">
+        <div class="class-badge">FOUNDATION</div>
+        <h2 class="class-title">Class 9th</h2>
+        <div class="subject-grid">
+            <a href="class9-math.html" class="subject-item">Math <span>(गणित)</span></a>
+            <a href="class9-science.html" class="subject-item">Science <span>(विज्ञान)</span></a>
+            <a href="class9-sst.html" class="subject-item">Social Science <span>(सामाजिक विज्ञान)</span></a>
+            <a href="class9-hindi.html" class="subject-item">Hindi <span>(हिंदी)</span></a>
+            <a href="class9-english.html" class="subject-item">English <span>(अंग्रेजी)</span></a>
+        </div>
+    </div>
+
+    <div class="class-card">
+        <div class="class-badge">MIDDLE SCHOOL</div>
+        <h2 class="class-title">Class 8th</h2>
+        <div class="subject-grid">
+            <a href="class8-math.html" class="subject-item">Math <span>(गणित)</span></a>
+            <a href="class8-science.html" class="subject-item">Science <span>(विज्ञान)</span></a>
+            <a href="class8-sst.html" class="subject-item">Social Science <span>(सामाजिक विज्ञान)</span></a>
+            <a href="class8-hindi.html" class="subject-item">Hindi <span>(हिंदी)</span></a>
+            <a href="class8-english.html" class="subject-item">English <span>(अंग्रेजी)</span></a>
+        </div>
+    </div>
+
+    <div class="class-card">
+        <div class="class-badge">MIDDLE SCHOOL</div>
+        <h2 class="class-title">Class 7th</h2>
+        <div class="subject-grid">
+            <a href="class7-math.html" class="subject-item">Math <span>(गणित)</span></a>
+            <a href="class7-science.html" class="subject-item">Science <span>(विज्ञान)</span></a>
+            <a href="class7-sst.html" class="subject-item">Social Science <span>(सामाजिक विज्ञान)</span></a>
+            <a href="class7-hindi.html" class="subject-item">Hindi <span>(हिंदी)</span></a>
+            <a href="class7-english.html" class="subject-item">English <span>(अंग्रेजी)</span></a>
+        </div>
+    </div>
+
+    <div class="class-card">
+        <div class="class-badge">PRIMARY FOUNDATION</div>
+        <h2 class="class-title">Class 6th</h2>
+        <div class="subject-grid">
+            <a href="class6-math.html" class="subject-item">Math <span>(गणित)</span></a>
+            <a href="class6-science.html" class="subject-item">Science <span>(विज्ञान)</span></a>
+            <a href="class6-sst.html" class="subject-item">Social Science <span>(सामाजिक विज्ञान)</span></a>
+            <a href="class6-hindi.html" class="subject-item">Hindi <span>(हिंदी)</span></a>
+            <a href="class6-english.html" class="subject-item">English <span>(अंग्रेजी)</span></a>
+            <a href="class6-sanskrit.html" class="subject-item">Sanskrit <span>(संस्कृत)</span></a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <div class="footer-logo">Parigyaan Research Centre</div>
+    <p>सीतामढ़ी की सर्वश्रेष्ठ कोचिंग संस्था | Since 2020</p>
+    <p style="font-size: 12px; margin-top: 20px; opacity: 0.6;">Designed by Om Priyadarshi</p>
+</footer>
+
+</body>
+</html>
